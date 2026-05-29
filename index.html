@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammad Shahid | Software Engineering Student</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body class="light-mode">
+
+  <!-- ===== HEADER / NAV ===== -->
+  <header id="main-header">
+    <nav class="navbar">
+      <div class="logo">Ms<span class="dot">.</span></div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home"    class="nav-link">Home</a></li>
+        <li><a href="#about"   class="nav-link">About</a></li>
+        <li><a href="#skills"  class="nav-link">Skills</a></li>
+        <li><a href="#projects"class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+        <button class="hamburger" id="hamburger" aria-label="Open menu">&#9776;</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <p class="hero-greeting" id="hero-greeting">Hello there 👋</p>
+        <h1 class="hero-title">I'm <span class="highlight">Muhammad Shahid</span></h1>
+        <h2 class="hero-subtitle" id="typed-text"></h2>
+        <p class="hero-desc">
+          I'm a software engineering student with a passion for building things that make a difference.
+          I love learning new technologies and solving real-world problems through code.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact"  class="btn btn-outline">Hire Me</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><span class="stat-num">1+</span><span class="stat-label">Month Exp.</span></div>
+          <div class="stat"><span class="stat-num">5+</span><span class="stat-label">Projects</span></div>
+          <div class="stat"><span class="stat-num">1+</span><span class="stat-label">Clients</span></div>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="avatar-ring">
+          <img src="me.png"
+               alt="Muhammad Shahid – Full-Stack Developer profile photo"
+               onerror="this.src='https://ui-avatars.com/api/?name=Muhammad+Shahid&size=300&background=c9a96e&color=fff&bold=true'" />
+        </div>
+        <div class="blob"></div>
+      </div>
+      <div class="scroll-hint">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section id="about" class="about section-pad">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Get to know me</span>
+          <h2 class="section-title">About Me</h2>
+        </div>
+        <div class="about-grid">
+          <article class="about-text">
+            <p>
+              I'm Muhammad Shahid, a software engineering student based in Lahore, Pakistan. I have a
+              strong passion for coding and a knack for problem-solving. I enjoy working on both
+              frontend projects and Data Science initiatives, and I'm always eager to learn new technologies.
+            </p>
+            <p>
+              When I'm not coding, you'll find me reading about design systems, experimenting
+              with generative art, or busy in history and exploring nature.
+            </p>
+            <div class="about-details">
+              <table class="info-table">
+                <caption>Personal Information</caption>
+                <tbody>
+                  <tr><th>Name</th><td>Muhammad Shahid</td></tr>
+                  <tr><th>Email</th><td>iamshahiid572@gmail.com</td></tr>
+                  <tr><th>Location</th><td>Lahore, Pakistan</td></tr>
+                  <tr><th>Degree</th><td>BS Software Engineering</td></tr>
+                  <tr><th>Available</th><td><span class="badge-green">Open to work</span></td></tr>
+                </tbody>
+              </table>
+            </div>
+            <a href="#contact" class="btn btn-primary" style="margin-top:1.5rem;display:inline-block;">Let's Talk</a>
+          </article>
+
+          <div class="about-extras">
+            <div class="card-highlight">
+              <span class="card-icon">🎯</span>
+              <h3>Problem Solver</h3>
+              <p>I love breaking complex problems into elegant, simple solutions.</p>
+            </div>
+            <div class="card-highlight">
+              <span class="card-icon">✨</span>
+              <h3>Design-Driven</h3>
+              <p>Great code means nothing without a great user experience.</p>
+            </div>
+            <div class="card-highlight">
+              <span class="card-icon">🚀</span>
+              <h3>Always Learning</h3>
+              <p>Tech evolves fast . I evolve faster.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS SECTION ===== -->
+    <section id="skills" class="skills section-pad alt-bg">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">What I bring</span>
+          <h2 class="section-title">My Skills</h2>
+        </div>
+
+        <div class="skills-filter">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="frontend">Frontend</button>
+          <button class="filter-btn" data-filter="backend">Backend</button>
+          <button class="filter-btn" data-filter="tools">Tools</button>
+        </div>
+
+        <div class="skills-grid" id="skills-grid">
+          <div class="skill-card" data-category="frontend">
+            <img src="images/html.png" alt="HTML5 logo"
+                 onerror="this.style.display='none'"/>
+            <span>HTML5</span>
+            <div class="skill-bar"><div class="skill-fill" style="width:95%"></div></div>
+          </div>
+          <div class="skill-card" data-category="frontend">
+            <img src="images/css.png" alt="CSS3 logo"
+                 onerror="this.style.display='none'"/>
+            <span>CSS3</span>
+            <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
+          </div>
+          <div class="skill-card" data-category="frontend">
+            <img src="images/js.png" alt="JavaScript logo"
+                 onerror="this.style.display='none'"/>
+            <span>JavaScript</span>
+            <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+          </div>
+          <div class="skill-card" data-category="frontend">
+            <img src="images/react.png" alt="React logo"
+                 onerror="this.style.display='none'"/>
+            <span>AI</span>
+            <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+          </div>
+          <div class="skill-card" data-category="backend">
+            <img src="images/node.png" alt="Node.js logo"
+                 onerror="this.style.display='none'"/>
+            <span>My SQL</span>
+            <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
+          </div>
+          <div class="skill-card" data-category="backend">
+            <img src="images/python.png" alt="Python logo"
+                 onerror="this.style.display='none'"/>
+            <span>Python</span>
+            <div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div>
+          </div>
+          <div class="skill-card" data-category="tools">
+            <img src="images/git.png" alt="Git logo"
+                 onerror="this.style.display='none'"/>
+            <span>Machine Learning</span>
+            <div class="skill-bar"><div class="skill-fill" style="width:88%"></div></div>
+          </div>
+          <div class="skill-card" data-category="tools">
+            <img src="images/figma.png" alt="Figma logo"
+                 onerror="this.style.display='none'"/>
+            <span>C++</span>
+            <div class="skill-bar"><div class="skill-fill" style="width:72%"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS SECTION ===== -->
+    <section id="projects" class="projects section-pad">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">What I've built</span>
+          <h2 class="section-title">Projects</h2>
+        </div>
+        <div class="projects-grid">
+
+          <article class="project-card">
+            <div class="project-img">
+              <img src="images/proj1.jpg"
+                   alt="neXora Packaging project screenshot"
+                   onerror="this.src='https://placehold.co/400x220/c9a96e/fff?text=neXora+Packaging'"/>
+              <div class="project-overlay">
+                <a href="#" class="btn btn-sm">Live Demo</a>
+                <a href="https://github.com/mshahid1214" class="btn btn-sm btn-outline">GitHub</a>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-tag">Full-Stack</span>
+              <h3>neXora Packaging Website</h3>
+              <p>A full-featured online store with cart, auth, and payment integration.</p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-img">
+              <img src="images/proj2.jpg"
+                   alt="Stock Price Prediction Dashboard project screenshot"
+                   onerror="this.src='https://placehold.co/400x220/2d6a4f/fff?text=Stock+Price+Prediction'"/>
+              <div class="project-overlay">
+                <a href="#" class="btn btn-sm">Live Demo</a>
+                <a href="https://github.com/mshahid1214" class="btn btn-sm btn-outline">GitHub</a>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-tag">Frontend</span>
+              <h3>Stock Price Prediction Dashboard</h3>
+              <p>A real-time dashboard for predicting stock prices using machine learning algorithms.</p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-img">
+              <img src="images/proj3.jpg"
+                   alt="School Management System project screenshot"
+                   onerror="this.src='https://placehold.co/400x220/1d3557/fff?text=School+Management'"/>
+              <div class="project-overlay">
+                <a href="#" class="btn btn-sm">Live Demo</a>
+                <a href="https://github.com/mshahid1214"  class="btn btn-sm btn-outline">GitHub</a>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-tag">API</span>
+              <h3>School Management System</h3>
+              <p>A comprehensive system for managing student records, grades, and attendance.Using Python and Database.</p>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Add / Remove project demo -->
+        <div class="project-demo">
+          <h3>Add a Project</h3>
+          <div class="add-project-form">
+            <input type="text" id="proj-title" placeholder="Project title" />
+            <input type="text" id="proj-tech"  placeholder="Tech stack" />
+            <button id="add-project-btn" class="btn btn-primary">+ Add</button>
+          </div>
+          <ul id="custom-projects" class="custom-project-list"></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section id="contact" class="contact section-pad alt-bg">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Say Assalam o Alaikum</span>
+          <h2 class="section-title">Contact Me</h2>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <p>Have a project in mind or just want to chat? Fill out the form and I'll get back to you within 24 hours.</p>
+            <div class="contact-item"><span>📧</span><span>iamshahid572@gmail.com</span></div>
+            <div class="contact-item"><span>📍</span><span>Lahore, Pakistan</span></div>
+            <div class="contact-item"><span>📞</span><span>+92 332 6256456</span></div>
+            <div class="datetime-box">
+              <p id="live-datetime">Loading time…</p>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <form id="contactForm"action="mailto:iamshahid572@gmail.com"method="post"enctype="text/plain">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">Full Name *</label>
+                <input type="text" id="fname" name="fname" placeholder="Ali Khan" />
+                <span class="err-msg" id="fname-err"></span>
+              </div>
+              <div class="form-group">
+                <label for="femail">Email Address *</label>
+                <input type="email" id="femail" name="femail" placeholder="ali@example.com" />
+                <span class="err-msg" id="femail-err"></span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fphone">Phone Number</label>
+                <input type="number" id="fphone" name="fphone" placeholder="03001234567" />
+                <span class="err-msg" id="fphone-err"></span>
+              </div>
+              <div class="form-group">
+                <label for="fservice">Service Needed *</label>
+                <select id="fservice" name="fservice">
+                  <option value="">-- Select --</option>
+                  <option value="web">Web Development</option>
+                  <option value="ui">Data Science</option>
+                  <option value="consult">Consulting</option>
+                  <option value="other">Other</option>
+                </select>
+                <span class="err-msg" id="fservice-err"></span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Budget Range *</label>
+              <div class="radio-group">
+                <label><input type="radio" name="budget" value="<500" /> Under $500</label>
+                <label><input type="radio" name="budget" value="500-2000" /> $500 – $2000</label>
+                <label><input type="radio" name="budget" value="2000+" /> $2000+</label>
+              </div>
+              <span class="err-msg" id="budget-err"></span>
+            </div>
+
+            <div class="form-group">
+              <label>Availability *</label>
+              <div class="check-group">
+                <label><input type="checkbox" name="avail" value="weekdays" /> Weekdays</label>
+                <label><input type="checkbox" name="avail" value="weekends" /> Weekends</label>
+                <label><input type="checkbox" name="avail" value="evening"  /> Evenings</label>
+              </div>
+              <span class="err-msg" id="avail-err"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="fmessage">Message * <span id="char-count" class="char-counter">0 / 300</span></label>
+              <textarea id="fmessage" name="fmessage" rows="5" maxlength="300"
+                        placeholder="Tell me about your project…"></textarea>
+              <span class="err-msg" id="fmessage-err"></span>
+            </div>
+
+            <div class="form-group">
+              <label><input type="checkbox" id="fagree" /> I agree to the <a href="#">privacy policy</a> *</label>
+              <span class="err-msg" id="fagree-err"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full">Send Message 🚀</button>
+          </form>
+        </div>
+
+        <!-- Success Message -->
+        <div id="success-msg" class="success-msg hidden">
+          <span>🎉</span>
+          <div>
+            <h3 id="success-name">Thanks!</h3>
+            <p>Your message was sent successfully. I'll reply within 24 hours.</p>
+          </div>
+          <button id="close-success" class="btn btn-sm">Close</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-brand">Ms<span class="dot">.</span></p>
+      <p class="footer-copy">© <span id="year"></span> Muhammad Shahid. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="https://github.com/mshahid1214"   target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/muhammad-shahid-a72717348" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.instagram.com/themuhammadshahid?igsh=MWY4amN5Mzl1b3h1Mg%3D%3D&utm_source=qr"  target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
